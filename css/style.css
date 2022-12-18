@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: #6B0010;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+nav .logo{
+    font-family: 'Press Start 2P', cursive;
+    padding: 1em;
+    display: inline-block;
+    
+}
+
+
+#menu #bladeren{
+    display: inline-block;
+    padding: 1em;
+    color: black;
+   
+}
+ #hamburger{
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 1em;
+
+}
+
+#menu{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all ease-in;
+    margin-top: 200px;
+}
+
+#burger{
+    display:none;
+}
+#burger:checked ~ #menu{
+    transform: translateX(80%);
+}
+#menu a{
+    color: #595959;
+    display: block;
+    font-size: 0.9em;
+    padding: 1em 0.4em;
+    border-top: 1px solid #ccc;
+}
+
+#home{
+    text-align: center;
+    background-image: url(../img/fotoGame.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+#home h1{
+    margin: 0;
+    padding-top: 0.5em;
+    text-transform: uppercase;
+    font-size: 2em;
+    display: inline-block;
+}
+
+#home h1 span{
+    display: inline-block;
+}
+
+.background{
+    background-color: #BDAE99;
+}
+.indexAbout{
+    margin-left: 1em;
+    padding-bottom: 2em;
+    
+}
+#about{
+    text-align: center;
+}
+#howToPlay{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+
+}
+#aboutTitle{
+    display: inline-block;
+}
+
+#info{
+    min-width: 300px;
+    max-width: 500px;
+}
+
+#someInfo{
+    padding-top: 10px;
+    display: flex;
+}
+
+#mails_form{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+}
+#adres{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+#mails_form label{
+    display: block;
+}
+#mail{
+    display: inline-block;
+
+}
+
+#gameVideo{
+    width: 400px;
+    
+
+}
+
+#ownReview{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+}
+#ownReview label{
+    display: block;
+
+}
+
+
+#question{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+}
+#question label{
+    display: block;
+
+}
+
+#revieuw{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+}
+
+#revieuw .revieuws{
+    background-color: #4069A2;
+    padding: 1em;
+    margin: 10px;
+    max-width: 150px;
+}
+
+footer{
+    background-color:#5A3F3F ;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    color: white;
+
+
+}
+footer h2{
+    margin: 0;
+}
+.footerContent{
+    display: flex;
+    justify-content: center;
+
+    
+}
+.footerContent a{
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+
+}
+
+@media(min-width:750px){
+    nav .logo{
+        width: 100%;
+    }
+
+    #hamburger{
+        display: none;
+    }
+
+    #menu{
+        position:static;
+        transform: translateX(0);
+        display: flex;
+        margin-top: 0px;
+        background: none;
+
+    }
+    #menu .group2{
+        display: flex;
+    }
+    nav{
+        align-items: center;
+        padding-left: 1em;
+     }
+
+    #menu a{
+        border: none;
+        color: white;
+        font-size:larger;
+
+    }
+    #menu a:last-child{
+        border: none;
+    }
+
+    #howToPlay{
+        padding-top: 131.5px;
+        padding-bottom: 131.5px;
+    }
+
+    #howToPlay #info{
+        margin-right: 50px;
+    }
+}
+
+@media(min-width:1000px){
+    #gameVideo{
+        width: 900px;
+    }
+}
